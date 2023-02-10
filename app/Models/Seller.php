@@ -22,11 +22,11 @@ class Seller extends Model
 
     public function user()
     {
-        return $this->belongsTo(user::class);
+        return $this->belongsTo(User::class);
     }
 
     public function sales()
     {
-        return $this->hasMany(Sales::class);
+        return $this->hasMany(Sale::class);
     }
 }

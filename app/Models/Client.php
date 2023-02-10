@@ -15,9 +15,9 @@ class Client extends Model
         'user_id'
     ];
 
-    public function adress()
+    public function address()
     {
-        return $this->hasOne(adress::class);
+        return $this->belongsTo(Address::class);
     }
 
     public function user()
@@ -25,7 +25,7 @@ class Client extends Model
         return $this->belongsTo(User::class);
     }
 
-    public function sales()
+    public function sale()
     {
         return $this->hasMany(Sale::class);
     }

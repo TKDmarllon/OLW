@@ -14,7 +14,7 @@ class Address extends Model
         'state'
     ];
 
-    public function cliente()
+    public function client()
     {
         return $this->hasMany(Client::class);
     }
